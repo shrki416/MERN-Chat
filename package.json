@@ -1,0 +1,23 @@
+{
+  "name": "mern_chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"heroku local\" \"npm run start --prefix ./client\"",
+    "postinstall": "npm install --prefix ./server && npm install --prefix ./client && npm run build --prefix ./client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrki416/MERN-Chat.git"
+  },
+  "author": "AA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrki416/MERN-Chat/issues"
+  },
+  "homepage": "https://github.com/shrki416/MERN-Chat#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
